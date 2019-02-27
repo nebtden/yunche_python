@@ -1,0 +1,137 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html style="font-size: 50px;">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>云车驾到</title>
+        <link rel="stylesheet" href="/static/css/ydui.css">
+        <link rel="stylesheet" href="/static/css/common.css">
+        <link rel="stylesheet" href="/static/icons/iconfont.css">
+        <link rel="stylesheet" href="/static/css/swiper-3.0.4.min.css">
+        <link rel="stylesheet" href="/static/css/all.css">
+        <link rel="stylesheet" href="/static/css/ciao.css">
+        <script src="/static/js/ydui.flexible.js"></script>
+
+</head>
+<body>
+
+<style>
+    body{
+        background:  #F2F2F4;
+    }
+    .tab-nav-inner li a{
+        border-radius: 20px;
+        padding: .08rem 0;
+    }
+    .tab-nav-inner li{
+        flex: 0 0 18%;
+        margin-top: .15rem;
+    }
+    .tab-nav-inner{
+        margin-top: 0.15rem;
+        margin-bottom: 0.15rem;
+    }
+    .use-instructions-ol>li {
+        font-size: .24rem;
+        color: #959595;
+        list-style: none;
+        margin-top: .04rem;
+    }
+
+    .tab-panel-item .card-list-ul li{padding: 0}
+
+</style>
+<div class="m-tab" data-ydui-tab="">
+    <ul class="tab-nav">
+        <!--        0未激活，1已激活，2已使用，3已过期，4卡券异常-->
+        <li class="tab-nav-item tab-active" data-id="-1">
+            <a href="javascript:;">全部</a>
+        </li>
+        <li class="tab-nav-item" data-id="1">
+            <a href="javascript:;">可用</a>
+        </li>
+        <li class="tab-nav-item" data-id="2">
+            <a href="javascript:;">已用</a>
+        </li>
+        <li class="tab-nav-item" data-id="3">
+            <a href="javascript:;">失效</a>
+        </li>
+    </ul>
+    <ul class="tab-nav-inner" style="background: #F2F2F4">
+        <li><a class="active" href="javascript:;" data-inner-nav="-1">全部</a></li>
+        <li><a href="javascript:;" data-inner-nav="4">洗车</a></li>
+        <li><a href="javascript:;" data-inner-nav="1">代驾</a></li>
+        <li><a href="javascript:;" data-inner-nav="2">救援</a></li>
+        <li><a href="javascript:;" data-inner-nav="5">加油</a></li>
+        <li><a href="javascript:;" data-inner-nav="7">年检</a></li>
+        <li><a href="javascript:;" data-inner-nav="3">其他</a></li>
+    </ul>
+    <div class="tab-panel tab-panel-outer" style="
+    padding: 0 .24rem;
+    background: #F2F2F4;">
+        <!-- 内嵌选项卡1 -->
+        <div class="tab-panel-item tab-active">
+
+            <div class="tab-panel-inner tab-panel-inner1">
+                <div class="tab-panel-inner-item active" data-inner-nav="0">
+
+                    <ul class="card-list-ul">
+                      {% block content %}{% endblock %}
+
+
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="commom-tabar-height"></div>
+<div class="m-tabbar tabbar-fixed">
+    <a href="/frontend/web/carhome/index.html?curtimestamp=1550720644" class="tabbar-item ">
+            <span class="tabbar-icon">
+                <i class="icon-cloudCar2-shouye"></i>
+
+            </span>
+        <span class="tabbar-txt">首页</span>
+    </a>
+    <a href="/frontend/web/caruser/accoupon.html?curtimestamp=1550720644" class="tabbar-item ">
+            <span class="tabbar-icon">
+                <i class="icon-cloudCar2-duihuan"></i>
+            </span>
+        <span class="tabbar-txt">兑换</span>
+    </a>
+    <a href="/frontend/web/caruorder/index.html?curtimestamp=1550720644" class="tabbar-item ">
+            <span class="tabbar-icon">
+                <i class="icon-cloudCar2-dingdan"></i>
+            </span>
+        <span class="tabbar-txt">订单</span>
+    </a>
+    <a href="/frontend/web/caruser/index.html?curtimestamp=1550720644" class="tabbar-item tabbar-active">
+            <span class="tabbar-icon">
+                <i class="icon-cloudCar2-wode">
+                   </i>
+            </span>
+        <span class="tabbar-txt">我的</span>
+    </a>
+</div>
+<!--
+<script src="{% static 'js/jquery-2.1.4.js"></script>
+<script src="{% static 'js/ydui.js"></script>
+
+<script src="{% static 'js/commom.js?ver=1102"></script>
+-->
+
+
+</body>
+</html>

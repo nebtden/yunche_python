@@ -1,0 +1,47 @@
+{%extends "../base.html" %}
+{% load static %}
+
+{% block content %}
+{% if coupon_list %}
+    {% for coupon in coupon_list %}
+        <li data-type="1" data-status="1" class="service-daijia">
+                            <div class="title ">
+                                <i>15公里30分钟等候代驾服务11111</i>
+                                <span>15公里</span>
+                            </div>
+                            <div class="content">
+                                <div class="up">
+                                    <div class="left">
+                                        <span>服务码: {{ coupon.coupon_sn }}</span>
+                                        <span>有效期至：2019-02-28</span>
+                                    </div>
+                                    <div class="right">
+                                        <a class="btn"  href="{% url 'detail' coupon.id %}">使用</a>
+                                    </div>
+                                </div>
+                                <div class="down">
+                                    <div class="card-explain">
+                                        <em class="icon-cloudCar2-qiaquanshuoming"></em>
+                                        <span>卡券说明</span>
+                                        <i class="icon-cloudCar2-jiantou_down"></i>
+                                    </div>
+                                    <div class="explain-content">
+                                        <ul class="use-instructions-ol">
+                                            <li>1、在有效期内，您将自动获取相应里程的免费代驾服务，超出当次免费里程者，不足部分需补差价；未达当次免费里程者，未使用里程不退不换。</li>
+                                            <li>
+                                                2、如您预约未成功或代驾司机因故未能到达，该券可能显示为“已使用”状态，但将在3小时内自动恢复至可使用状态。
+                                            </li>
+                                            <li>
+                                                3、如有疑问，请致电客服：400-617-1981
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+    {% endfor %}
+
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+{% endblock %}

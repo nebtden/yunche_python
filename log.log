@@ -1,0 +1,4 @@
+2019-02-25 16:20:08,122 - C:\Users\Administrator\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): www.baidu.com
+2019-02-25 16:20:08,259 - C:\Users\Administrator\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:396] - DEBUG: http://www.baidu.com:80 "GET / HTTP/1.1" 200 None
+2019-02-26 10:30:36,228 - C:\Users\Administrator\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:208] - DEBUG: Starting new HTTP connection (1): www.baidu.com
+2019-02-26 10:30:36,323 - C:\Users\Administrator\Anaconda3\lib\site-packages\urllib3\connectionpool.py[line:396] - DEBUG: http://www.baidu.com:80 "GET / HTTP/1.1" 200 None

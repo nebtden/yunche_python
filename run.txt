@@ -1,0 +1,6 @@
+python manage.py runserver 127.0.0.1:8080
+
+2.21任务
+使用django，解决滴滴的问题。。
+第一步，可以看到优惠券
+http://testing.my_django.com/coupous

@@ -1,0 +1,75 @@
+{%extends "../users_base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="my-header">
+    <span>
+        <img src="/" onerror="/">
+    </span>
+    <i><?= $user['nickname'] ?></i>
+    <i>积分：222</i>
+</div>
+<div class="card-wrapper">
+    <a href="/" >
+        <span class="icon-cloudCar2-wodeqiaquan"></span>
+        <i>我的卡券</i>
+    </a>
+    <a href="/" >
+        <span class="icon-cloudCar2-duihuanfuwu"></span>
+        <i>兑换服务</i>
+    </a>
+
+        <a href="/" >
+            <span class="icon-cloudCar2-duihuanfuwu"></span>
+            <i>卡券核销</i>
+        </a>
+</div>
+
+<div class="my-links-list">
+    <ul class="my-links-ul">
+        <li>
+            <a href="/">
+                <i class="icon-cloudCar2-wodedingdan"></i>
+                <span>我的订单</span>
+                <em class="icon-cloudCar2-jiantou"></em>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <i class="icon-cloudCar2-wodecheku"></i>
+                <span>我的车库</span>
+                <em class="icon-cloudCar2-jiantou"></em>
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'mobile' %}">
+                <i class="icon-cloudCar2-wodeshouji"></i>
+                <span>我的手机</span>
+                <time>{{ users.mobile }}</time>
+                <em class="icon-cloudCar2-jiantou"></em>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <i class="icon-cloudCar2-wodejiayouqiahao"></i>
+                <span>我的加油卡号</span>
+                <em class="icon-cloudCar2-jiantou"></em>
+            </a>
+        </li>
+        <li>
+            <a href="/">
+                <i class="icon-cloudCar2-shanghufuwuzhongxin"></i>
+                <span>商户服务中心</span>
+                <em class="icon-cloudCar2-jiantou"></em>
+            </a>
+        </li>
+        <li>
+            <a href="tel:400-617-1981">
+                <i class="icon-cloudCar2-kefurexian"></i>
+                <span>客服热线</span>
+                <time>400-617-1981</time>
+            </a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

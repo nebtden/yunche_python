@@ -1,0 +1,88 @@
+html {
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+}
+body {
+    height:100%;
+    font-size:.3rem;
+    font-family:  "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+/**
+*  重写yudi.css 开始
+ */
+.list-price{
+    color: #f23030;
+}
+.tabbar-item.tabbar-active {
+    color: #3873eb;
+}
+.list-theme1 .list-item .list-mes .list-title, .list-theme2 .list-item .list-mes .list-title{
+    margin-bottom:.1rem;
+    color: #464b55;
+    font-weight:600;   
+}
+[class*="icon-cloudCar2"]:before, [class^=icon-cloudCar2]:before {
+    font-family: "iconfont";
+    font-size: inherit;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+    color: #c4c6cd; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+    color: #c4c6cd; 
+}
+::-webkit-input-placeholder{
+    color: #c4c6cd;
+}
+/**
+*  重写yudi.css 结束
+ */
+a{
+    text-align: center;
+    color:inherit;
+    -webkit-tap-highlight-color:transparent;
+}
+a:active,
+a:hover {
+    outline: 0;
+    -webkit-tap-highlight-color:transparent;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+td,
+th {
+    padding: 0
+}
+ul,ol{margin:0;padding:0;}
+img{border: none;}
+li{list-style:none;}
+i{font-style:normal;}
+.clearFloat:after, .clearFloat:before{display:table;content:'';} 
+.clearFloat:after{clear:both;}
+/*外边距之上边距*/
+.mt3{margin-top:3px;}.mt5{ margin-top:5px;}.mt10{ margin-top:10px;}.mt15{margin-top:15px;}.mt20{ margin-top:20px;}.mt25{margin-top:25px;}
+.mt30{margin-top:30px;}.mt35{margin-top:35px;}.mt40{margin-top:40px;}.mt45{margin-top:45px;}.mt50{margin-top:50px;}
+.mt55{margin-top:55px;}.mt60{margin-top:60px;}.mt65{margin-top:65px;}.mt70{margin-top:70px;}.mt75{margin-top:75px;}
+/*外边距之下边距*/
+.mb5{margin-bottom:5px;}.mb10{margin-bottom:10px;}.mb15{margin-bottom:15px;}.mb20{margin-bottom:20px;}.mb25{margin-bottom:25px;}
+.mb30{margin-bottom:30px;}.mb35{margin-bottom:35px;}.mb40{margin-bottom:40px;}.mb45{margin-bottom:45px;}.mb50{margin-bottom:50px;}
